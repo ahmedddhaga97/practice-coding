@@ -5,3 +5,4 @@ def hello(name: str = "world") -> str:
 
 if __name__ == "__main__":
     print(hello())
+    print("tes")
