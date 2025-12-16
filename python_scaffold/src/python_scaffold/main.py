@@ -3,5 +3,11 @@ def hello(name: str = "world") -> str:
     return f"Hello, {name}!"
 
 
-if __name__ == "__main__":
-    print(hello())
+#if __name__ == "__main__":
+#    print(hello())
+
+def lambda_handler(event, context):
+    return {
+        "statusCode": 200,
+        "body": hello()
+    }
